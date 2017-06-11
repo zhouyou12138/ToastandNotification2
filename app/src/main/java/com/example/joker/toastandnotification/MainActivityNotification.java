@@ -55,6 +55,7 @@ public class MainActivityNotification extends Activity {
                 break;
             case R.id.button4:
                 setWeather("天气消息","天气状况","雨",R.drawable.ic_weather_rain);
+
                 break;
             case R.id.button5:
                 setWeather("天气消息","天气状况","阴",R.drawable.ic_weather_cloud);
