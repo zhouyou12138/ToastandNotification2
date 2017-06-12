@@ -1,12 +1,12 @@
 package com.example.joker.toastandnotification;
 
-import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,7 +19,7 @@ import butterknife.OnClick;
  * Created by joker on 2017/6/10.
  */
 
-public class MainActivityNotification extends Activity {
+public class MainActivityNotification extends AppCompatActivity {
     private static int NOTIFICATIONS_ID = R.layout.activity_notification;
     @BindView(R.id.button3)
     Button button4;
@@ -55,7 +55,6 @@ public class MainActivityNotification extends Activity {
                 break;
             case R.id.button4:
                 setWeather("天气消息","天气状况","雨",R.drawable.ic_weather_rain);
-
                 break;
             case R.id.button5:
                 setWeather("天气消息","天气状况","阴",R.drawable.ic_weather_cloud);
